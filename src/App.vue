@@ -1,26 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
-  <header>
-    <nav class="nav-link">
-      <RouterLink to="/sample">Sample</RouterLink>
-    </nav>
-  </header>
-  <div class="wrapper">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <AppHeader />
     <RouterView />
+    <AppFooter />
   </div>
 </template>
 
-<style scoped>
-.nav-link {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  display: flex;
-  gap: 1rem;
-}
-.wrapper {
-  padding: 0.5rem;
-}
-</style>
+<style scoped></style>
