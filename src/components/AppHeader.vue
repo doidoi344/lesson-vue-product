@@ -24,19 +24,16 @@ import { RouterLink } from 'vue-router'
     </a>
 
     <nav class="hidden gap-12 lg:flex">
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/sample"
-        >Sample Pinia</RouterLink
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/product-list"
+        >商品一覧</RouterLink
       >
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/">Dummy</RouterLink>
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/">Dummy</RouterLink>
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/">Dummy</RouterLink>
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/product-management"
+        >商品管理</RouterLink
+      >
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/contact"
+        >お問い合わせ</RouterLink
+      >
     </nav>
-
-    <a
-      href="#"
-      class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-      >サンプルボタン</a
-    >
   </header>
 </template>
 
