@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import router from '@/router'
+import { ROUTES } from '@/constants'
 
 export const useProductList = () => {
   const activeTab = ref<string>('WOMEN')
@@ -9,7 +10,7 @@ export const useProductList = () => {
    */
   const onClickTab = (tabText: string) => {
     activeTab.value = tabText
-    router.push(`/product-list/${tabText.toLowerCase()}`)
+    router.push(`${ROUTES.PRODUCTS.ROOT}/${tabText.toLowerCase()}`)
   }
 
   /**

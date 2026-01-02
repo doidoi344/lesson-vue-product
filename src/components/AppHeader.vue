@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import { ROUTES } from '@/constants'
 </script>
 
 <template>
@@ -24,13 +25,15 @@ import { RouterLink } from 'vue-router'
     </a>
 
     <nav class="hidden gap-12 lg:flex">
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/product-list"
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" :to="ROUTES.PRODUCTS.ROOT"
         >商品一覧</RouterLink
       >
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/product-management"
+      <RouterLink
+        class="text-lg font-semibold hover:text-indigo-500"
+        :to="ROUTES.PRODUCTS.MANAGEMENT"
         >商品管理</RouterLink
       >
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" to="/contact"
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" :to="ROUTES.CONTACT"
         >お問い合わせ</RouterLink
       >
     </nav>
