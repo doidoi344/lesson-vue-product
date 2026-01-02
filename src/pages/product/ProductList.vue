@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onBeforeMount } from 'vue'
-import { useProductList } from '@/composables/productList'
+import { useProductList } from '@/composables/product/productList'
 import CategoryTabItem from '@/components/CategoryTabItem.vue'
 
 const { pageSetUp, onClickTab, activeTab } = useProductList()
