@@ -33,7 +33,7 @@ import { ROUTES } from '@/constants'
         :to="ROUTES.PRODUCTS.MANAGEMENT"
         >商品管理</RouterLink
       >
-      <RouterLink class="text-lg font-semibold hover:text-indigo-500" :to="ROUTES.CONTACT"
+      <RouterLink class="text-lg font-semibold hover:text-indigo-500" :to="ROUTES.CONTACT.ROOT"
         >お問い合わせ</RouterLink
       >
     </nav>

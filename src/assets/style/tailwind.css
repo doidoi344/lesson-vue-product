@@ -5,3 +5,21 @@
 body {
   @apply font-noto;
 }
+
+.main-visual {
+  @apply absolute min-h-screen inset-0 -z-10 bg-top bg-cover bg-repeat-y;
+  background-image: url('/images/main.png');
+}
+
+.main-back {
+  @apply absolute min-h-screen inset-0 -z-10 bg-top bg-cover bg-repeat-y;
+  background-image: url('/images/main-back.png');
+}
+
+.full-view {
+  @apply min-h-[calc(100vh-225px)] flex items-center justify-center;
+}
+
+.full-view-home {
+  @apply min-h-[calc(100vh-100px)] flex items-center justify-center;
+}
